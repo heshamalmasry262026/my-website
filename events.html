@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفعاليات - دليل الجامعة الافتراضية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <strong>🎓 دليل الفعاليات</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="events.html">الفعاليات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title bg-light py-4 mb-5">
+            <div class="container">
+                <h1>قائمة الفعاليات</h1>
+                <p class="text-muted">اكتشف جميع فعاليات الجامعة الافتراضية</p>
+            </div>
+        </section>
+
+        <section class="search-filter py-4 mb-5 bg-light">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="searchInput" placeholder="ابحث عن فعالية...">
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select" id="categoryFilter">
+                            <option value="">جميع التصنيفات</option>
+                            <option value="culture">ثقافة</option>
+                            <option value="sports">رياضة</option>
+                            <option value="music">موسيقى</option>
+                            <option value="international">عالمي</option>
+                            <option value="tech">تقنية</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select" id="locationFilter">
+                            <option value="">جميع المواقع</option>
+                            <option value="main-hall">القاعة الرئيسية</option>
+                            <option value="sports-field">الملعب الرياضي</option>
+                            <option value="concert-hall">قاعة الحفلات</option>
+                            <option value="auditorium">المدرج</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-list py-5">
+            <div class="container">
+                <div class="row g-4" id="eventsList">
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm event-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/event1.jpg" class="img-fluid rounded-start" alt="فعالية" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">مؤتمر التكنولوجيا والابتكار</h5>
+                                        <p class="card-text">اجتماع سنوي يجمع الخبراء والمتخصصين في مجال التكنولوجيا والابتكار</p>
+                                        <p class="text-muted mb-2"><small>📅 15 مايو 2026 | 📍 القاعة الرئيسية</small></p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-primary">تقنية</span>
+                                        </div>
+                                        <a href="event.html?id=1" class="btn btn-sm btn-primary">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm event-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/event2.jpg" class="img-fluid rounded-start" alt="فعالية" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">بطولة كرة القدم الجامعية</h5>
+                                        <p class="card-text">منافسة رياضية مثيرة بين فرق الجامعة المختلفة</p>
+                                        <p class="text-muted mb-2"><small>📅 20 مايو 2026 | 📍 الملعب الرياضي</small></p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-danger">رياضة</span>
+                                        </div>
+                                        <a href="event.html?id=2" class="btn btn-sm btn-primary">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm event-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/event3.jpg" class="img-fluid rounded-start" alt="فعالية" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">حفل الموسيقى الكلاسيكية</h5>
+                                        <p class="card-text">عرض موسيقي رائع يقدمه فنانون محترفون</p>
+                                        <p class="text-muted mb-2"><small>📅 25 مايو 2026 | 📍 قاعة الحفلات</small></p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-success">موسيقى</span>
+                                        </div>
+                                        <a href="event.html?id=3" class="btn btn-sm btn-primary">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm event-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/event4.jpg" class="img-fluid rounded-start" alt="فعالية" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ندوة الذكاء الاصطناعي</h5>
+                                        <p class="card-text">استكشف تطبيقات الذكاء الاصطناعي في العالم الحديث</p>
+                                        <p class="text-muted mb-2"><small>📅 10 مايو 2026 | 📍 المدرج</small></p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-primary">تقنية</span>
+                                        </div>
+                                        <a href="event.html?id=4" class="btn btn-sm btn-primary">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm event-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/event5.jpg" class="img-fluid rounded-start" alt="فعالية" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">مسابقة الكتابة الإبداعية</h5>
+                                        <p class="card-text">فرصة لعرض مواهبك في الكتابة والإبداع</p>
+                                        <p class="text-muted mb-2"><small>📅 12 مايو 2026 | 📍 القاعة الرئيسية</small></p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-info">أدب</span>
+                                        </div>
+                                        <a href="event.html?id=5" class="btn btn-sm btn-primary">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm event-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="images/event6.jpg" class="img-fluid rounded-start" alt="فعالية" style="height: 200px; object-fit: cover;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">بطولة الشطرنج</h5>
+                                        <p class="card-text">منافسة ذهنية مثيرة بين أفضل اللاعبين</p>
+                                        <p class="text-muted mb-2"><small>📅 18 مايو 2026 | 📍 الملعب الرياضي</small></p>
+                                        <div class="mb-2">
+                                            <span class="badge bg-warning">رياضة ذهنية</span>
+                                        </div>
+                                        <a href="event.html?id=6" class="btn btn-sm btn-primary">التفاصيل</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>عن الدليل</h5>
+                    <p>منصة شاملة لعرض فعاليات الجامعة الافتراضية السورية</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>التواصل</h5>
+                    <p>البريد: info@svu-events.com<br>الهاتف: +963-123-456789</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>متابعتنا</h5>
+                    <p>
+                        <a href="#" class="text-white me-2">Facebook</a>
+                        <a href="#" class="text-white me-2">Twitter</a>
+                        <a href="#" class="text-white">Instagram</a>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2026 دليل فعاليات الجامعة الافتراضية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

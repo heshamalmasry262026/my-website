@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - دليل الجامعة الافتراضية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <strong>🎓 دليل الفعاليات</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title bg-light py-4 mb-5">
+            <div class="container">
+                <h1>اتصل بنا</h1>
+                <p class="text-muted">نحن هنا للإجابة على جميع استفساراتك</p>
+            </div>
+        </section>
+
+        <section class="contact-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mb-5 mb-lg-0">
+                        <h2 class="mb-4">أرسل لنا رسالة</h2>
+
+                        <div id="successAlert" class="alert alert-success alert-dismissible fade show" role="alert" style="display: none;">
+                            <strong>تم بنجاح!</strong> تم استقبال رسالتك. سنتواصل معك قريباً.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                        <div id="errorAlert" class="alert alert-danger alert-dismissible fade show" role="alert" style="display: none;">
+                            <strong>خطأ!</strong> يرجى ملء جميع الحقول بشكل صحيح.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+
+                        <form id="contactForm" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">الاسم الكامل *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback" id="nameError">
+                                    يرجى إدخال اسمك الكامل
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">البريد الإلكتروني *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback" id="emailError">
+                                    يرجى إدخال بريد إلكتروني صحيح
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">رقم الهاتف</label>
+                                <input type="tel" class="form-control" id="phone" name="phone">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">الموضوع *</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                                <div class="invalid-feedback" id="subjectError">
+                                    يرجى إدخال موضوع الرسالة
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">الرسالة *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <div class="invalid-feedback" id="messageError">
+                                    يرجى إدخال نص الرسالة
+                                </div>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="agreeCheck" name="agree" required>
+                                <label class="form-check-label" for="agreeCheck">
+                                    أوافق على سياسة الخصوصية *
+                                </label>
+                                <div class="invalid-feedback" id="agreeError">
+                                    يجب الموافقة على سياسة الخصوصية
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg">إرسال الرسالة</button>
+                            <button type="reset" class="btn btn-outline-secondary btn-lg ms-2">مسح</button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h2 class="mb-4">معلومات التواصل</h2>
+
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">📧 البريد الإلكتروني</h5>
+                                <p class="card-text">
+                                    <strong>البريد العام:</strong><br>
+                                    <a href="mailto:info@svu-events.com">info@svu-events.com</a>
+                                </p>
+                                <p class="card-text">
+                                    <strong>دعم العملاء:</strong><br>
+                                    <a href="mailto:support@svu-events.com">support@svu-events.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">📞 الهاتف</h5>
+                                <p class="card-text">
+                                    <strong>الخط الساخن:</strong><br>
+                                    <a href="tel:+963123456789">+963-123-456789</a>
+                                </p>
+                                <p class="card-text">
+                                    <strong>ساعات العمل:</strong><br> السبت - الخميس: 9:00 - 17:00
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">📍 الموقع</h5>
+                                <p class="card-text">
+                                    الجامعة الافتراضية السورية<br> دمشق، سوريا
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">🌐 وسائل التواصل الاجتماعي</h5>
+                                <p class="card-text">
+                                    <a href="#" class="btn btn-sm btn-primary me-2">Facebook</a><br>
+                                    <a href="#" class="btn btn-sm btn-info me-2 mt-2">Twitter</a><br>
+                                    <a href="#" class="btn btn-sm btn-danger mt-2">Instagram</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">موقعنا على الخريطة</h2>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.0856254629316!2d36.20622!3d33.51349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e6dc413c0001%3A0x937f0b1d830faec7!2z2K_Yp9mF2YrYpyDYp9mE2K_Yp9iq2LHZiNiv!5e0!3m2!1sar!2s!4v1234567890"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">الأسئلة الشائعة</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        كيف أسجل في فعالية؟
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        يمكنك التسجيل في أي فعالية من خلال الضغط على زر "سجل الآن" في صفحة تفاصيل الفعالية. ستحتاج إلى ملء بيانات بسيطة والموافقة على الشروط.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        هل يمكنني إلغاء تسجيلي؟
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        نعم، يمكنك إلغاء تسجيلك قبل 24 ساعة من موعد الفعالية. يرجى التواصل معنا عبر البريد الإلكتروني أو الهاتف.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        كيف أقترح فعالية جديدة؟
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        يمكنك إرسال اقتراحك من خلال هذه الصفحة أو التواصل معنا مباشرة. سنقوم بمراجعة اقتراحك والرد عليك خلال أسبوعين.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        هل هناك رسوم للمشاركة؟
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        معظم الفعاليات مجانية. بعض الفعاليات الخاصة قد تتطلب رسوم تسجيل. يتم توضيح ذلك في صفحة الفعالية.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>عن الدليل</h5>
+                    <p>منصة شاملة لعرض فعاليات الجامعة الافتراضية السورية</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>التواصل</h5>
+                    <p>البريد: info@svu-events.com<br>الهاتف: +963-123-456789</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>متابعتنا</h5>
+                    <p>
+                        <a href="#" class="text-white me-2">Facebook</a>
+                        <a href="#" class="text-white me-2">Twitter</a>
+                        <a href="#" class="text-white">Instagram</a>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2026 دليل فعاليات الجامعة الافتراضية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const successAlert = document.getElementById('successAlert');
+        const errorAlert = document.getElementById('errorAlert');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const agree = document.getElementById('agreeCheck').checked;
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            successAlert.style.display = 'none';
+            errorAlert.style.display = 'none';
+
+            let isValid = true;
+
+            if (!name) {
+                document.getElementById('nameError').textContent = 'يرجى إدخال اسمك الكامل';
+                isValid = false;
+            }
+
+            if (!email || !emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = 'يرجى إدخال بريد إلكتروني صحيح';
+                isValid = false;
+            }
+
+            if (!subject) {
+                document.getElementById('subjectError').textContent = 'يرجى إدخال موضوع الرسالة';
+                isValid = false;
+            }
+
+            if (!message) {
+                document.getElementById('messageError').textContent = 'يرجى إدخال نص الرسالة';
+                isValid = false;
+            }
+
+            if (!agree) {
+                document.getElementById('agreeError').textContent = 'يجب الموافقة على سياسة الخصوصية';
+                isValid = false;
+            }
+
+            if (isValid) {
+                successAlert.style.display = 'block';
+
+                contactForm.reset();
+
+                setTimeout(() => {
+                    successAlert.style.display = 'none';
+                }, 5000);
+            } else {
+                errorAlert.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>
