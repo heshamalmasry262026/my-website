@@ -27,7 +27,25 @@ body {
     color: #333;
     background-color: #fff;
 }
-
+body {
+  font-size: 14px;
+}
+/* للأجهزة المتوسطة (أجهزة لوحية - أكبر من 768 بكسل) */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* للأجهزة الكبيرة (شاشات الكمبيوتر - أكبر من 1024 بكسل) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* رأس الصفحة وشريط التنقل */
 
